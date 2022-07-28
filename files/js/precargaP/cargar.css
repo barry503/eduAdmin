@@ -1,0 +1,67 @@
+/*hoja de estilos de precarga de todas las paginas*/
+
+/* Preloder */
+
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  /*color del fondo*/
+  background: rgba(223, 183, 7, 0.521);/*#17a2b8;*/
+  /*background: url('../files/img/edit.png');*/
+}
+
+.loader {
+  width:  /*80px;*/ 40px;
+  height: /*80px;*/ 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:  -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+  -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid #04101d;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid #f9f9f9;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid #fff;
+    border-left-color: transparent;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    border: 4px solid rgb(14, 247, 52);
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    border: 4px solid #e0e40e;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    border: 4px solid rgb(219, 46, 46);
+    border-left-color: transparent;
+  }
+}
